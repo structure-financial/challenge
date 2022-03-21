@@ -1,0 +1,27 @@
+{
+  "editor.rulers": [100],
+  "editor.formatOnSave": true,
+  "eslint.format.enable": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.options": {
+    "extensions": [".js", ".jsx", ".md", ".mdx", ".ts", ".tsx"]
+  },
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact",
+    "markdown",
+    "mdx"
+  ],
+  "eslint.workingDirectories": [
+    "./apps/@stxr-admin",
+    "./apps/@stxr-web",
+    "./packages/ui",
+    "./packages/tsconfig",
+    "./packages/esconfig"
+  ]
+}
