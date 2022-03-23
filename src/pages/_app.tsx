@@ -4,6 +4,9 @@ import "@/styles/global.css";
 
 /**
  * The main entrypoint to the app
+ *
+ * No editing is necessary in this file.
+ *
  * @component
  */
 const App = ({ Component, pageProps }: AppProps) => {

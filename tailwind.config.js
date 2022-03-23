@@ -144,6 +144,7 @@ const config = {
       },
     },
   },
+  plugins: [require("tailwindcss-font-inter")],
 };
 
 module.exports = {
