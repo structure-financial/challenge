@@ -141,6 +141,8 @@ const config = {
         7: "#F0F0F0",
         /** 8 is similar to `gray-25` in the old colors */
         8: "#F6F6F6",
+        9: "#191919",
+        /** Added for coding challenge */
       },
     },
   },
