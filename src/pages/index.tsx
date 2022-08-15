@@ -104,7 +104,11 @@ const Homepage = () => {
                 </div>
               </div>
               <div className="flex w-[330px] h-[131px]" />
-              <div className="flex w-[330px] h-[57px]" />
+              <div className="flex justify-center items-center w-[330px] h-[57px] bg-gray-9 rounded-lg">
+                <div className="flex items-center w-[65px] h-[24px]">
+                  <p className="text-body-2 text-white">Buy BTC</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
