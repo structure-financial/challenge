@@ -75,7 +75,13 @@ const Homepage = () => {
           {/* Trade Placeholder */}
           <div className="flex justify-center items-center w-[380px] h-[460px] text-gray-4 bg-white rounded-xl border border-gray-6">
             <div className="flex flex-col gap-2 items-start w-[330px] h-[410px]">
-              <div className="flex w-[73px] h-[28px]" />
+              <div className="flex flex-col justify-between w-[73px] h-[28px]">
+                <ol className="flex flex-row justify-between w-[73px] h-[24px] text-body-2">
+                  <li className="text-gray-1">Buy</li>
+                  <li className="text-gray-4">Sell</li>
+                </ol>
+                <div className="flex w-[30px] h-[2px] bg-gray-1 rounded-sm" />
+              </div>
               <div className="flex w-[330px] h-[122px]" />
               <div className="flex w-[330px] h-[32px]" />
               <div className="flex w-[330px] h-[131px]" />
