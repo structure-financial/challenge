@@ -6,7 +6,7 @@ const Homepage = () => {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Navbar */}
-      <header className="flex justify-center px-4 mobile:px-8 tablet:px-10 w-full h-[79px] mobile:h-[69px] bg-white border-b border-gray-6">
+      <header className="flex justify-center px-4 w-full h-[79px] bg-white border-b border-gray-6 mobile:px-8 mobile:h-[69px] tablet:px-10">
         <div className="flex justify-start items-center w-full max-w-desktop">
           <svg
             width="130px"
@@ -50,10 +50,10 @@ const Homepage = () => {
         {/* Title */}
         <div className="flex justify-between mb-4">
           <div className="flex flex-col mobile:flex-row mobile:gap-2 mobile:items-center">
-            <div className="hidden mobile:inline w-8 h-8">
+            <div className="hidden w-8 h-8 mobile:inline">
               <div className="w-8 h-8 bg-white rounded-full border border-gray-6" />
             </div>
-            <h3 className="font-medium tracking-tight leading-7 mobile:leading-[unset] text-header-3">
+            <h3 className="text-header-3 font-medium tracking-tight leading-7 mobile:leading-[unset]">
               Bitcoin
             </h3>
             <p className="relative top-[2px] leading-7 mobile:leading-[unset]">
@@ -63,39 +63,45 @@ const Homepage = () => {
 
           {/* Share Icons */}
           <div className="flex gap-4 items-center">
-            <div className="flex justify-center items-center w-8 h-8 !rounded-full bg-gray-6" />
-            <div className="flex justify-center items-center w-8 h-8 !rounded-full bg-gray-6" />
+            <div className="flex justify-center items-center w-8 h-8 bg-gray-6 !rounded-full" />
+            <div className="flex justify-center items-center w-8 h-8 bg-gray-6 !rounded-full" />
           </div>
         </div>
 
         <div className="flex justify-between mb-4">
           {/* Graph Placeholder */}
-          <div className="w-[780px] h-[455px] rounded-xl bg-gray-6" />
+          <div className="w-[780px] h-[455px] bg-gray-6 rounded-xl" />
 
           {/* Trade Placeholder */}
-          <div className="flex justify-center items-center w-[380px] h-[455px] bg-white rounded-xl border text-gray-4 border-gray-6">
-            <p>Component Goes Here</p>
+          <div className="flex justify-center items-center w-[380px] h-[460px] text-gray-4 bg-white rounded-xl border border-gray-6">
+            <div className="flex flex-col gap-2 items-start w-[330px] h-[410px]">
+              <div className="flex w-[73px] h-[28px]" />
+              <div className="flex w-[330px] h-[122px]" />
+              <div className="flex w-[330px] h-[32px]" />
+              <div className="flex w-[330px] h-[131px]" />
+              <div className="flex w-[330px] h-[57px]" />
+            </div>
           </div>
         </div>
 
         <div className="flex justify-between">
           {/* Stats Placeholder */}
           <div className="flex basis-2/3 flex-col max-w-[780px]">
-            <div className="mb-4 w-[120px] h-[32px] rounded-lg bg-gray-6" />
+            <div className="mb-4 w-[120px] h-[32px] bg-gray-6 rounded-lg" />
 
-            <div className="mb-4 w-[780px] h-[136px] rounded-xl bg-gray-6" />
+            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
 
-            <div className="mb-4 w-[120px] h-[32px] rounded-lg bg-gray-6" />
+            <div className="mb-4 w-[120px] h-[32px] bg-gray-6 rounded-lg" />
 
-            <div className="mb-4 w-[780px] h-[136px] rounded-xl bg-gray-6" />
+            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
 
-            <div className="mb-4 w-[780px] h-[136px] rounded-xl bg-gray-6" />
+            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
 
-            <div className="mb-4 w-[780px] h-[136px] rounded-xl bg-gray-6" />
+            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
           </div>
 
           {/* Trending Placeholder */}
-          <div className="w-[380px] h-[708px] rounded-xl bg-gray-6" />
+          <div className="w-[380px] h-[708px] bg-gray-6 rounded-xl" />
         </div>
       </div>
     </div>
