@@ -1,10 +1,8 @@
-import Link from "next/link";
-
 /**
  * @component
  */
 
-const Homepage = () => {
+const DetailExpand = () => {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Navbar */}
@@ -107,31 +105,29 @@ const Homepage = () => {
               </div>
               <div className="flex relative flex-col w-[330px] h-[131px]">
                 <div className="flex z-0 justify-center items-center w-[330px] h-[65.5px] rounded-t-[10px] border border-gray-6">
-                  <Link href="/detail-expand">
-                    <div className="flex relative items-center w-[290px] h-[25px]">
-                      <div className="flex absolute left-0 w-[29px] h-[24px]">
-                        <p className="text-body-2 text-gray-9">Buy</p>
-                      </div>
-                      <div className="flex absolute left-[104px] justify-between w-[63px] h-[25px]">
-                        <p className="flex w-[25px] h-[25px] !rounded-full border border-gray-6" />
-                        <p className="flex w-[32px] text-body-2 text-gray-9 h-24px]">
-                          BTC
-                        </p>
-                      </div>
-                      <svg
-                        width="7"
-                        height="14"
-                        viewBox="0 0 7 14"
-                        className="absolute right-[20px] shrink-0"
-                        fill="none"
-                        stroke="#191919"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <title>Chevron</title>
-                        <path d="M1 1L7 7L1 13" strokeLinecap="round" />
-                      </svg>{" "}
+                  <div className="flex relative items-center w-[290px] h-[25px]">
+                    <div className="flex absolute left-0 w-[29px] h-[24px]">
+                      <p className="text-body-2 text-gray-9">Buy</p>
                     </div>
-                  </Link>
+                    <div className="flex absolute left-[104px] justify-between w-[63px] h-[25px]">
+                      <p className="flex w-[25px] h-[25px] !rounded-full border border-gray-6" />
+                      <p className="flex w-[32px] text-body-2 text-gray-9 h-24px]">
+                        BTC
+                      </p>
+                    </div>
+                    <svg
+                      width="7"
+                      height="14"
+                      viewBox="0 0 7 14"
+                      className="absolute right-[20px] shrink-0"
+                      fill="none"
+                      stroke="#191919"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <title>Chevron</title>
+                      <path d="M1 1L7 7L1 13" strokeLinecap="round" />
+                    </svg>{" "}
+                  </div>
                 </div>
                 <div className="flex z-0  justify-center items-center w-[330px] h-[65.5px] rounded-b-[10px] border border-gray-6">
                   <div className="flex relative items-center w-[290px] h-[25px]">
@@ -209,4 +205,4 @@ const Homepage = () => {
   );
 };
 
-export default Homepage;
+export default DetailExpand;
