@@ -106,8 +106,15 @@ const Homepage = () => {
               <div className="flex flex-col w-[330px] h-[131px]">
                 <div className="flex  justify-center items-center w-[330px] h-[65.5px] rounded-t-[10px] border border-gray-6">
                   <div className="flex relative items-center w-[290px] h-[25px]">
-                    <div className="flex absolute left-0 w-[29px] h-[24px]" />
-                    <div className="flex absolute left-[104px] w-[63px] h-[25px]" />
+                    <div className="flex absolute left-0 w-[29px] h-[24px]">
+                      <p className="text-body-2 text-gray-9">Buy</p>
+                    </div>
+                    <div className="flex absolute left-[104px] justify-between w-[63px] h-[25px]">
+                      <p className="flex w-[25px] h-[25px] !rounded-full border border-gray-6" />
+                      <p className="flex w-[32px] text-body-2 text-gray-9 h-24px]">
+                        BTC
+                      </p>
+                    </div>
                     <svg
                       width="7"
                       height="14"
@@ -124,8 +131,15 @@ const Homepage = () => {
                 </div>
                 <div className="flex  justify-center items-center w-[330px] h-[65.5px] rounded-b-[10px] border border-gray-6">
                   <div className="flex relative items-center w-[290px] h-[25px]">
-                    <div className="flex absolute left-0 w-[64px] h-[24px]" />
-                    <div className="flex absolute left-[104px] w-[63px] h-[25px]" />
+                    <div className="flex absolute left-0 w-[64px] h-[24px]">
+                      <p className="text-body-2 text-gray-9">Pay with</p>
+                    </div>
+                    <div className="flex absolute left-[104px] justify-between w-[63px] h-[25px]">
+                      <p className="flex w-[25px] h-[25px] !rounded-full border border-gray-6" />
+                      <p className="flex w-[32px] text-body-2 text-gray-9 h-24px]">
+                        ETH
+                      </p>
+                    </div>
                     <svg
                       width="7"
                       height="14"
