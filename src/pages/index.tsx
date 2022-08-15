@@ -88,7 +88,21 @@ const Homepage = () => {
                   <li className="text-balance-display-2">0</li>
                 </ol>
               </div>
-              <div className="flex w-[330px] h-[32px]" />
+              <div className="flex justify-between w-[330px] h-[32px]">
+                <div className="flex flex-row items-center w-[154px] h-[32px]">
+                  <p className="text-body-3 text-gray-4">
+                    ETH Wallet: $29,778.36
+                  </p>
+                </div>
+                <div className="flex justify-between w-[97px] h-[32px]">
+                  <div className="flex justify-center items-center w-[32px] h-[32px] bg-gray-8 !rounded-full">
+                    <p className="text-body-3 text-gray-1">C</p>
+                  </div>
+                  <div className="flex justify-center items-center w-[55px] h-[32px] bg-gray-8 !rounded-full">
+                    <p className="text-body-3 text-gray-1">MAX</p>
+                  </div>
+                </div>
+              </div>
               <div className="flex w-[330px] h-[131px]" />
               <div className="flex w-[330px] h-[57px]" />
             </div>
