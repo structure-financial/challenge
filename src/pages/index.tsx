@@ -82,7 +82,12 @@ const Homepage = () => {
                 </ol>
                 <div className="flex w-[30px] h-[2px] bg-gray-1 rounded-sm" />
               </div>
-              <div className="flex w-[330px] h-[122px]" />
+              <div className="flex justify-around items-center w-[330px] h-[122px]">
+                <ol className="flex flex-row justify-center items-center w-[46px] h-[42px] text-gray-9">
+                  <li className="text-balance-display-1">$</li>
+                  <li className="text-balance-display-2">0</li>
+                </ol>
+              </div>
               <div className="flex w-[330px] h-[32px]" />
               <div className="flex w-[330px] h-[131px]" />
               <div className="flex w-[330px] h-[57px]" />
