@@ -103,8 +103,8 @@ const Homepage = () => {
                   </div>
                 </div>
               </div>
-              <div className="flex flex-col w-[330px] h-[131px]">
-                <div className="flex  justify-center items-center w-[330px] h-[65.5px] rounded-t-[10px] border border-gray-6">
+              <div className="flex relative flex-col w-[330px] h-[131px]">
+                <div className="flex z-0 justify-center items-center w-[330px] h-[65.5px] rounded-t-[10px] border border-gray-6">
                   <div className="flex relative items-center w-[290px] h-[25px]">
                     <div className="flex absolute left-0 w-[29px] h-[24px]">
                       <p className="text-body-2 text-gray-9">Buy</p>
@@ -118,18 +118,18 @@ const Homepage = () => {
                     <svg
                       width="7"
                       height="14"
-                      viewBox="0 0 9 16"
-                      className="absolute right-[13px] shrink-0"
+                      viewBox="0 0 7 14"
+                      className="absolute right-[20px] shrink-0"
                       fill="none"
                       stroke="#191919"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <title>Chevron</title>
-                      <path d="M1 1L8 8L1 15" strokeLinecap="round" />
+                      <path d="M1 1L7 7L1 13" strokeLinecap="round" />
                     </svg>{" "}
                   </div>
                 </div>
-                <div className="flex  justify-center items-center w-[330px] h-[65.5px] rounded-b-[10px] border border-gray-6">
+                <div className="flex z-0  justify-center items-center w-[330px] h-[65.5px] rounded-b-[10px] border border-gray-6">
                   <div className="flex relative items-center w-[290px] h-[25px]">
                     <div className="flex absolute left-0 w-[64px] h-[24px]">
                       <p className="text-body-2 text-gray-9">Pay with</p>
@@ -143,17 +143,18 @@ const Homepage = () => {
                     <svg
                       width="7"
                       height="14"
-                      viewBox="0 0 9 16"
-                      className="absolute right-[13px] shrink-0"
+                      viewBox="0 0 7 14"
+                      className="absolute right-[20px] shrink-0"
                       fill="none"
                       stroke="#191919"
                       xmlns="http://www.w3.org/2000/svg"
                     >
                       <title>Chevron</title>
-                      <path d="M1 1L8 8L1 15" strokeLinecap="round" />
+                      <path d="M1 1L7 7L1 13" strokeLinecap="round" />
                     </svg>{" "}
                   </div>
                 </div>
+                <p className="flex absolute right-[58px] bottom-[48px] z-10 w-[34px] h-[34px] bg-gray-8 !rounded-full" />
               </div>
               <div className="flex justify-center items-center w-[330px] h-[57px] bg-gray-9 rounded-lg">
                 <div className="flex items-center w-[65px] h-[24px]">
