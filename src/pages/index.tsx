@@ -154,7 +154,23 @@ const Homepage = () => {
                     </svg>{" "}
                   </div>
                 </div>
-                <p className="flex absolute right-[58px] bottom-[48px] z-10 w-[34px] h-[34px] bg-gray-8 !rounded-full" />
+                <div className="flex absolute right-[58px] bottom-[48px] z-10 w-[34px] h-[34px] bg-gray-8 !rounded-full">
+                  <svg
+                    width="12"
+                    height="14"
+                    viewBox="0 0 14 16"
+                    className="absolute top-[10px] left-[11px] shrink-0"
+                    fill="none"
+                    stroke="#191919"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <title>Arrows</title>
+                    <path
+                      d="M1 3L3 1L5 3M3 1L3 10 M13 11L11 13L9 11 M11 13L11 4"
+                      strokeLinecap="round"
+                    />
+                  </svg>{" "}
+                </div>
               </div>
               <div className="flex justify-center items-center w-[330px] h-[57px] bg-gray-9 rounded-lg">
                 <div className="flex items-center w-[65px] h-[24px]">
