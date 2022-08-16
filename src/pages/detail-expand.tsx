@@ -89,10 +89,19 @@ const DetailExpand = () => {
           <div className="flex flex-col justify-between w-[380px] h-[1203px]">
             {/* Trade Placeholder */}
             <div className="flex justify-center items-center mb-4 w-[380px] h-[718px] text-gray-4 bg-white rounded-xl border border-gray-6">
-              <p>Component goes here</p>
+              <div className="flex flex-col justify-between items-center w-[330px] h-[668px]">
+                <p className="flex items-start w-[330px] h-[26px] text-body-1 font-medium text-gray-9">
+                  Which Asset would you like to buy?
+                </p>
+                <div className="flex relative w-[330px] h-[54px] bg-gray-8 rounded-lg">
+                  <p className="flex w-[1px] h-[24px] bg-gray-1 !rounded-full" />
+                </div>
+                <div className="flex w-[330px] h-[456px]" />
+                <div className="flex w-[330px] h-[57px]" />
+              </div>
             </div>
             {/* Trending Placeholder */}
-            <div className="w-[380px] h-[708px] bg-gray-6 rounded-xl" />
+            <div className="w-[380px] h-[450px] bg-gray-6 rounded-xl" />
           </div>
         </div>
       </div>
