@@ -94,10 +94,17 @@ const DetailExpand = () => {
                   Which Asset would you like to buy?
                 </p>
                 <div className="flex relative w-[330px] h-[54px] bg-gray-8 rounded-lg">
-                  <p className="flex w-[1px] h-[24px] bg-gray-1 !rounded-full" />
+                  <p className="flex absolute top-[15px] left-[39px] w-[1px] h-[24px] bg-gray-1 !rounded-full" />
+                  <div className="flex absolute top-[15px] left-[42px] w-[105px] h-[24px]">
+                    <p className="text-body-2 text-gray-4">Search assets</p>
+                  </div>
                 </div>
                 <div className="flex w-[330px] h-[456px]" />
-                <div className="flex w-[330px] h-[57px]" />
+                <div className="flex justify-center items-center w-[330px] h-[57px] rounded-lg border border-gray-6">
+                  <p className="flex w-[53px] h-[24px] text-body-2 text-center text-red-4">
+                    Cancel
+                  </p>
+                </div>
               </div>
             </div>
             {/* Trending Placeholder */}
