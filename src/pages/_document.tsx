@@ -8,7 +8,7 @@ const MyDocument = () => {
   return (
     <Html>
       <Head />
-      <body className="antialiased text-black bg-white text-body-2 font-feature-default font-inter">
+      <body className="text-body-2 antialiased text-black bg-white font-feature-default font-inter">
         <Main />
         <NextScript />
       </body>
