@@ -1,8 +1,8 @@
-import Link from "next/link";
-
 /**
  * @component
  */
+
+import Link from "next/link";
 
 const Homepage = () => {
   return (
