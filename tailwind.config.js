@@ -94,6 +94,8 @@ const config = {
       "header-5": ["18px", "26px"],
       "subtitle-1": ["16px", "24px"],
       "subtitle-2": ["14px", "20px"],
+      "balance-display-1": ["28px", "30px"],
+      "balance-display-2": ["46px", "50px"],
       caption: ["14px", "22px"],
     },
     colors: {
@@ -112,6 +114,7 @@ const config = {
         3: "#8DE072",
         4: "#A2E68C",
         5: "#225412",
+        6: "#5EB242",
       },
       blue: {
         1: "#E6F1FC",
@@ -141,6 +144,8 @@ const config = {
         7: "#F0F0F0",
         /** 8 is similar to `gray-25` in the old colors */
         8: "#F6F6F6",
+        9: "#191919",
+        /** Added for coding challenge */
       },
     },
   },

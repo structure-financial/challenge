@@ -2,9 +2,9 @@
  * @component
  */
 
-import Link from "next/link";
+import TradeWindow from "@/components/TradeWindow";
 
-const Homepage = () => {
+const DetailExpand = () => {
   return (
     <div className="flex flex-col items-center w-full">
       {/* Navbar */}
@@ -70,143 +70,34 @@ const Homepage = () => {
           </div>
         </div>
 
-        <div className="flex justify-between mb-4">
-          {/* Graph Placeholder */}
-          <div className="w-[780px] h-[455px] bg-gray-6 rounded-xl" />
+        <div className="flex flex-row justify-between w-[1180px] h-[1203px]">
+          <div className="flex flex-col justify-between w-[780px] h-[1203px]">
+            {/* Graph Placeholder */}
+            <div className="mb-4 w-[780px] h-[455px] bg-gray-6 rounded-xl" />
+            <div className="flex basis-2/3 flex-col max-w-[780px]">
+              <div className="mb-4 w-[120px] h-[32px] bg-gray-6 rounded-lg" />
 
-          {/* Trade Placeholder */}
-          <div className="flex justify-center items-center w-[380px] h-[460px] text-gray-4 bg-white rounded-xl border border-gray-6">
-            <div className="flex flex-col gap-2 items-start w-[330px] h-[410px]">
-              <div className="flex flex-col justify-between w-[73px] h-[28px]">
-                <ol className="flex flex-row justify-between w-[73px] h-[24px] text-body-2">
-                  <li className="text-gray-1">Buy</li>
-                  <li className="text-gray-4">Sell</li>
-                </ol>
-                <div className="flex w-[30px] h-[2px] bg-gray-1 rounded-sm" />
-              </div>
-              <div className="flex justify-around items-center w-[330px] h-[122px]">
-                <ol className="flex flex-row justify-center items-center w-[46px] h-[42px] text-gray-9">
-                  <li className="text-balance-display-1">$</li>
-                  <li className="text-balance-display-2">0</li>
-                </ol>
-              </div>
-              <div className="flex justify-between w-[330px] h-[32px]">
-                <div className="flex flex-row items-center w-[154px] h-[32px]">
-                  <p className="text-body-3 text-gray-4">
-                    ETH Wallet: $29,778.36
-                  </p>
-                </div>
-                <div className="flex justify-between w-[97px] h-[32px]">
-                  <div className="flex justify-center items-center w-[32px] h-[32px] bg-gray-8 !rounded-full">
-                    <p className="text-body-3 text-gray-1">C</p>
-                  </div>
-                  <div className="flex justify-center items-center w-[55px] h-[32px] bg-gray-8 !rounded-full">
-                    <p className="text-body-3 text-gray-1">MAX</p>
-                  </div>
-                </div>
-              </div>
-              <div className="flex relative flex-col w-[330px] h-[131px]">
-                <div className="flex z-0 justify-center items-center w-[330px] h-[65.5px] rounded-t-[10px] border border-gray-6">
-                  <Link href="/detail-expand">
-                    <div className="flex relative items-center w-[290px] h-[25px]">
-                      <div className="flex absolute left-0 w-[29px] h-[24px]">
-                        <p className="text-body-2 text-gray-9">Buy</p>
-                      </div>
-                      <div className="flex absolute left-[104px] justify-between w-[63px] h-[25px]">
-                        <p className="flex w-[25px] h-[25px] !rounded-full border border-gray-6" />
-                        <p className="flex w-[32px] text-body-2 text-gray-9 h-24px]">
-                          BTC
-                        </p>
-                      </div>
-                      <svg
-                        width="7"
-                        height="14"
-                        viewBox="0 0 7 14"
-                        className="absolute right-[20px] shrink-0"
-                        fill="none"
-                        stroke="#191919"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <title>Chevron</title>
-                        <path d="M1 1L7 7L1 13" strokeLinecap="round" />
-                      </svg>{" "}
-                    </div>
-                  </Link>
-                </div>
-                <div className="flex z-0  justify-center items-center w-[330px] h-[65.5px] rounded-b-[10px] border border-gray-6">
-                  <div className="flex relative items-center w-[290px] h-[25px]">
-                    <div className="flex absolute left-0 w-[64px] h-[24px]">
-                      <p className="text-body-2 text-gray-9">Pay with</p>
-                    </div>
-                    <div className="flex absolute left-[104px] justify-between w-[63px] h-[25px]">
-                      <p className="flex w-[25px] h-[25px] !rounded-full border border-gray-6" />
-                      <p className="flex w-[32px] text-body-2 text-gray-9 h-24px]">
-                        ETH
-                      </p>
-                    </div>
-                    <svg
-                      width="7"
-                      height="14"
-                      viewBox="0 0 7 14"
-                      className="absolute right-[20px] shrink-0"
-                      fill="none"
-                      stroke="#191919"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <title>Chevron</title>
-                      <path d="M1 1L7 7L1 13" strokeLinecap="round" />
-                    </svg>{" "}
-                  </div>
-                </div>
-                <div className="flex absolute right-[58px] bottom-[48px] z-10 w-[34px] h-[34px] bg-gray-8 !rounded-full">
-                  <svg
-                    width="12"
-                    height="14"
-                    viewBox="0 0 14 16"
-                    className="absolute top-[10px] left-[11px] shrink-0"
-                    fill="none"
-                    stroke="#191919"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <title>Arrows</title>
-                    <path
-                      d="M1 3L3 1L5 3M3 1L3 10 M13 11L11 13L9 11 M11 13L11 4"
-                      strokeLinecap="round"
-                    />
-                  </svg>{" "}
-                </div>
-              </div>
-              <div className="flex justify-center items-center w-[330px] h-[57px] bg-gray-9 rounded-lg">
-                <div className="flex items-center w-[65px] h-[24px]">
-                  <p className="text-body-2 text-white">Buy BTC</p>
-                </div>
-              </div>
+              <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
+
+              <div className="mb-4 w-[120px] h-[32px] bg-gray-6 rounded-lg" />
+
+              <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
+
+              <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
+
+              <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
             </div>
           </div>
-        </div>
-
-        <div className="flex justify-between">
-          {/* Stats Placeholder */}
-          <div className="flex basis-2/3 flex-col max-w-[780px]">
-            <div className="mb-4 w-[120px] h-[32px] bg-gray-6 rounded-lg" />
-
-            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
-
-            <div className="mb-4 w-[120px] h-[32px] bg-gray-6 rounded-lg" />
-
-            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
-
-            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
-
-            <div className="mb-4 w-[780px] h-[136px] bg-gray-6 rounded-xl" />
+          <div className="flex flex-col justify-between w-[380px] h-[1203px]">
+            {/* Trade Placeholder */}
+            <TradeWindow />
+            {/* Trending Placeholder */}
+            <div className="w-[380px] h-[450px] bg-gray-6 rounded-xl" />
           </div>
-
-          {/* Trending Placeholder */}
-          <div className="w-[380px] h-[708px] bg-gray-6 rounded-xl" />
         </div>
       </div>
     </div>
   );
 };
 
-export default Homepage;
+export default DetailExpand;
